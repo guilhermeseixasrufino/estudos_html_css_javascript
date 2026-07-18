@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Primeiro Programa com Javascript</title>
+    <style>
+        body {
+            background-color: rgb(69, 73, 105);
+            color: white;
+            font: normal 20px Arial;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Hello World!</h1>
+    <p>Iniciando com o <q>Hello World</q> de cada dia.</p>
+
+    <script>
+       var n1 = Number(window.prompt('Digite um número: ')) // window.prompt por padrão retorna uma 'string'
+       var n2 = Number(window.prompt('Digite outro número: ')) 
+       /*
+            Para resolver o problema de concatenação, eu converto string para número:
+            Number.parseInt(n) -> Para números inteiros
+            Number.parseFloat(n) -> Para números reais
+            Number(n) -> Identifica automaticamente se é inteiro ou real
+
+            Para converter número para string:
+            String()
+            n.toString()
+       */ 
+       var s = n1 + n2
+       window.alert(`A soma entre ${n1} e ${n2} é igual a: ${s}` )
+       /* 
+            Funcionamento do '+'
+            (number + number) para adição
+            (string + string) para concatenação
+       */
+    </script>
+
+</body>
+</html>
