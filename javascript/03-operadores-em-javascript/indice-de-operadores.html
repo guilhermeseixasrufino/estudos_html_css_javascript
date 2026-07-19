@@ -4,16 +4,84 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Índice de Operadores</title>
+    
     <style>
+
         body {
-            background-color: white;
-            font: normal 20px Arial;
-            text-align: center; 
+            margin: 0;
+            background-color: white ;
+            font: normal 20px Arial; 
         }
+
+        main {
+            width: 100%;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            box-sizing: border-box; /* Utilizo essa propriedade para que a largura total sempre deve ser 100%, sem somar os elemtos de width e padding*/
+        }
+
+        h1 {
+            font-size: 50px;
+            text-align: left;
+        }
+
+        h2 {
+            text-align: left;
+            margin-bottom: 5px;
+        }
+
+        p {
+            text-align: justify;
+        }
+
+        .card-operator {
+            height: 180px;
+            width:40%;
+            border: 2px solid rgb(182, 182, 182);
+            border-radius: 15px;
+            padding: 10px;
+        }
+
+        .icone {
+            background-color: #2e3192;
+            height: 50px;
+            width: 50px;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            
+            font-size: 50px;
+            font-weight: bold;
+            color: white;
+
+            border-radius: 10px;
+        }
+
     </style>
 </head>
 <body>
-    <h1>Bem-vindo ao Índice de Operadores!</h1>
-    <p></p>
+    <main>
+
+        <h1>Bem-vindo ao Índice de Operadores!</h1>
+        <h2>Introdução</h2>
+        <hr>
+        <p>Esse pequeno projeto foi criado com o intuito de documentar/organizar meu estudo de <strong><i>operadores</i></strong> em Javascritp, aproveitando para colocar todos os meu conteúdos estudados até o momento em prática.</p>
+
+        <h2>Aritméticos</h2>
+
+        <section>
+            <article class="card-operator">
+                <header>
+                    <div class="icone">
+                        +
+                    </div>  
+                    <h6>Adição</h6>
+                </header>
+            </article>
+        </section>
+
+    </main>
 </body>
 </html>
