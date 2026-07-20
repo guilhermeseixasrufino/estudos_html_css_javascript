@@ -1,24 +1,25 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Índice de Operadores</title>
-    
-    <style>
 
+    <style>
         body {
             margin: 0;
-            background-color: white ;
-            font: normal 20px Arial; 
+            background-color: white;
+            font: normal 20px Arial;
         }
 
         main {
             width: 100%;
-            max-width: 800px;
+            max-width: 1000px;
             margin: 0 auto;
             padding: 20px;
-            box-sizing: border-box; /* Utilizo essa propriedade para que a largura total sempre deve ser 100%, sem somar os elemtos de width e padding*/
+            box-sizing: border-box;
+            /* Utilizo essa propriedade para que a largura total sempre deve ser 100%, sem somar os elemtos de width e padding*/
         }
 
         h1 {
@@ -32,56 +33,172 @@
         }
 
         p {
-            text-align: justify;
+            text-align: left;
+            font-size: 17px;
+        }
+
+        pre {
+            margin: 0;
+            background-color: #f3f4f6;
+            padding: 18px;
+            border-radius: 10px;
+            overflow: auto;
+        }
+
+        section {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
         }
 
         .card-operator {
-            height: 180px;
-            width:40%;
             border: 2px solid rgb(182, 182, 182);
             border-radius: 15px;
-            padding: 10px;
+            padding: 16px;
+            box-shadow: 5px 5px 5px rgba(0, 0, 0, 0 .134);
+            box-sizing: border-box;
+            max-height: 300px;
+        }
+
+        .card-operator header {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+
+            padding-bottom: 15px;
+            border-bottom: 2px solid #d8d8d8;
+        }
+
+        .operator-name {
+            color: #2e3192;
+            font-size: clamp(25px, 3vw, 35px);
+            font-weight: bold;
+            margin: 0;
         }
 
         .icone {
             background-color: #2e3192;
-            height: 50px;
-            width: 50px;
+            height: 40px;
+            width: 40px;
 
             display: flex;
             align-items: center;
             justify-content: center;
-            
-            font-size: 50px;
+
+            font-size: 40px;
             font-weight: bold;
             color: white;
 
             border-radius: 10px;
         }
-
     </style>
 </head>
+
 <body>
     <main>
 
         <h1>Bem-vindo ao Índice de Operadores!</h1>
         <h2>Introdução</h2>
         <hr>
-        <p>Esse pequeno projeto foi criado com o intuito de documentar/organizar meu estudo de <strong><i>operadores</i></strong> em Javascritp, aproveitando para colocar todos os meu conteúdos estudados até o momento em prática.</p>
-        
+        <p style="text-align: justify; font-size: 20px;">Esse pequeno projeto foi criado com o intuito de
+            documentar/organizar meu estudo de <strong><i>operadores</i></strong> em Javascritp, aproveitando para
+            colocar todos os meu conteúdos estudados até o momento em prática.</p>
+
         <h2>Aritméticos</h2>
 
         <section>
+            <!--Operador de Adição-->
             <article class="card-operator">
                 <header>
                     <div class="icone">
                         +
-                    </div>  
-                    <h6>Adição</h6>
+                    </div>
+                    <div class="operator-name">
+                        Adição
+                    </div>
                 </header>
+                <p>Além de concatenação, é utilizado para soma de valores.</p>
+                <pre><code>exemplo:
+5 + 5 = 10</code></pre>
+            </article>
+
+            <!--Operador de Subtração-->
+            <article class="card-operator">
+                <header>
+                    <div class="icone">
+                        -
+                    </div>
+                    <div class="operator-name">
+                        Subtração
+                    </div>
+                </header>
+                <p>É utilizado para a subtração de valores.</p>
+                <pre><code>exemplo:
+10 - 5 = 5</code></pre>
+            </article>
+
+            <!--Operador de Multiplicação-->
+            <article class="card-operator">
+                <header>
+                    <div class="icone">
+                        *
+                    </div>
+                    <div class="operator-name">
+                        Multiplicação
+                    </div>
+                </header>
+                <p>É utilizado para a multiplicação de valores.</p>
+                <pre><code>exemplo:
+2 * 5 = 10</code></pre>
+            </article>
+
+            <!--Operador de Divisão-->
+            <article class="card-operator">
+                <header>
+                    <div class="icone">
+                        /
+                    </div>
+                    <div class="operator-name">
+                        Divisão
+                    </div>
+                </header>
+                <p>É utilizado para a divisão de valores.</p>
+                <pre><code>exemplo:
+2 / 10 = 5</code></pre>
+            </article>
+
+            <!--Operador de Resto da Divisão-->
+            <article class="card-operator">
+                <header>
+                    <div class="icone">
+                        %
+                    </div>
+                    <div class="operator-name">
+                        Resto da Divisão Inteira
+                    </div>
+                </header>
+                <p>É utilizado para a retornar o resto da divisão inteira.</p>
+                <pre><code>exemplo:
+2 % 10 = 2</code></pre>
+            </article>
+        
+            <!--Operador de Potência-->
+            <article class="card-operator">
+                <header>
+                    <div class="icone">
+                        **
+                    </div>
+                    <div class="operator-name">
+                        Potência
+                    </div>
+                </header>
+                <p>É utilizado para realizar a potenciação.</p>
+                <pre><code>exemplo:
+2 ** 4 = 8</code></pre>
             </article>
         </section>
 
     </main>
 </body>
+
 </html>
