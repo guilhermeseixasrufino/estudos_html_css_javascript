@@ -1,11 +1,14 @@
+<!--
+    Antes de começarmos, recomendo fortemente que você execute o arquivo localmente para que você possa visualizar o guia com os operadores principais do Javascrip, fiz apenas para por em prática o que aprendi até o momento e também para fixar o conteúdo, agradeço o interesse e volte sempre!
+    -->
 <!DOCTYPE html>
 <html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Índice de Operadores</title>
-
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+    <title>Operadores Javascrip</title>
     <style>
         body {
             margin: 0;
@@ -58,6 +61,8 @@
             box-shadow: 5px 5px 5px rgba(0, 0, 0, 0 .134);
             box-sizing: border-box;
             max-height: 300px;
+            display: flex;
+            flex-direction: column;
         }
 
         .card-operator header {
@@ -79,13 +84,14 @@
         .icone {
             background-color: #2e3192;
             height: 40px;
-            width: 40px;
+            min-width: 40px;
+            padding: 0 8px;
 
             display: flex;
             align-items: center;
             justify-content: center;
 
-            font-size: 40px;
+            font-size: clamp(14px, 3vw, 22px);
             font-weight: bold;
             color: white;
 
@@ -97,7 +103,7 @@
 <body>
     <main>
 
-        <h1>Bem-vindo ao Índice de Operadores!</h1>
+        <h1>Bem-vindo ao Índice de Operadores do Javascrip!</h1>
         <h2>Introdução</h2>
         <hr>
         <p style="text-align: justify; font-size: 20px;">Esse pequeno projeto foi criado com o intuito de
@@ -174,7 +180,7 @@
                         %
                     </div>
                     <div class="operator-name">
-                        Resto da Divisão Inteira
+                        Resto da Divisão
                     </div>
                 </header>
                 <p>É utilizado para a retornar o resto da divisão inteira.</p>
@@ -196,6 +202,217 @@
                 <pre><code>exemplo:
 2 ** 4 = 8</code></pre>
             </article>
+        </section>
+
+    <h2>Atribuição</h2>
+        <section>
+            <!--Operador de Incremento-->
+            <article class="card-operator">
+                <header>
+                    <div class="icone">
+                        +=
+                    </div>
+                    <div class="operator-name">
+                        Auto Atribuição
+                    </div>
+                </header>
+                <p>Acrescenta o valor somando ao da variável já existente.</p>
+                <pre><code>exemplo:
+n += 4</code></pre>
+            </article>
+
+            <!--Operador +1 -->
+            <article class="card-operator">
+                <header>
+                    <div class="icone">
+                        ++
+                    </div>
+                    <div class="operator-name">
+                        Soma 1
+                    </div>
+                </header>
+                <p>Acrescenta 1 ao valor da variável.</p>
+                <pre><code>exemplo:
+n++ </code></pre>
+            </article>
+
+            <!--Operador -1 -->
+            <article class="card-operator">
+                <header>
+                    <div class="icone">
+                        --
+                    </div>
+                    <div class="operator-name">
+                        Subtraí 1
+                    </div>
+                </header>
+                <p>Subtraí 1 do valor da variável.</p>
+                <pre><code>exemplo:
+n-- </code></pre>
+            </article>
+
+        </section>
+
+        <h2>Relacionais</h2>
+        <section>
+            <!--Maior-->
+            <article class="card-operator">
+                <header>
+                    <div class="icone">
+                        >
+                    </div>
+                    <div class="operator-name">
+                        Maior
+                    </div>
+                </header>
+                <p>Compara o valor, dizendo se é maior</p>
+                <pre><code>exemplo:
+5 > 4 = true</code></pre>
+            </article>
+
+            <!--Menor-->
+            <article class="card-operator">
+                <header>
+                    <div class="icone">
+                        <
+                    </div>
+                    <div class="operator-name">
+                        Menor
+                    </div>
+                </header>
+                <p>Compara o valor, dizendo se é menor</p>
+                <pre><code>exemplo:
+"5 < 4 = false"</code></pre>
+            </article>
+
+            <!--Maior ou Igual-->
+            <article class="card-operator">
+                <header>
+                    <div class="icone">
+                        >=
+                    </div>
+                    <div class="operator-name">
+                        Maior ou Igual
+                    </div>
+                </header>
+                <p>Compara o valor, dizendo se é maior ou igual.</p>
+                <pre><code>exemplo:
+5 >= 5 = true</code></pre>
+            </article>
+
+            <!--Menor ou Igual-->
+            <article class="card-operator">
+                <header>
+                    <div class="icone">
+                        <=
+                    </div>
+                    <div class="operator-name">
+                        Menor ou Igual
+                    </div>
+                </header>
+                <p>Compara o valor, dizendo se é menor ou igual.</p>
+                <pre><code>exemplo:
+4 <= 5 = true</code></pre>
+            </article>
+
+            <!--Igualdade-->
+            <article class="card-operator">
+                <header>
+                    <div class="icone">
+                        ==
+                    </div>
+                    <div class="operator-name">
+                        Igualdade
+                    </div>
+                </header>
+                <p>Compara se os valores são iguais (sem verificar o tipo).</p>
+                <pre><code>exemplo:
+5 == "5" = true</code></pre>
+            </article>
+
+            <!--Diferença-->
+            <article class="card-operator">
+                <header>
+                    <div class="icone">
+                        !=
+                    </div>
+                    <div class="operator-name">
+                        Diferença
+                    </div>
+                </header>
+                <p>Compara se os valores são diferentes (sem verificar o tipo).</p>
+                <pre><code>exemplo:
+5 != "6" = true</code></pre>
+            </article>
+
+        </section>
+
+        <h2>Lógicos</h2>
+        <section>
+            <!--Negação-->
+            <article class="card-operator">
+                <header>
+                    <div class="icone">
+                        !
+                    </div>
+                    <div class="operator-name">
+                        Negação
+                    </div>
+                </header>
+                <p>Inverte o valor lógico de uma expressão.</p>
+                <pre><code>exemplo:
+!true = false</code></pre>
+            </article>
+
+            <!--E lógico-->
+            <article class="card-operator">
+                <header>
+                    <div class="icone">
+                        &&
+                    </div>
+                    <div class="operator-name">
+                        E (AND)
+                    </div>
+                </header>
+                <p>Retorna true apenas se todas as condições forem verdadeiras.</p>
+                <pre><code>exemplo:
+true && false = false</code></pre>
+            </article>
+
+            <!--Ou lógico-->
+            <article class="card-operator">
+                <header>
+                    <div class="icone">
+                        ||
+                    </div>
+                    <div class="operator-name">
+                        Ou (OR)
+                    </div>
+                </header>
+                <p>Retorna true se pelo menos uma das condições for verdadeira.</p>
+                <pre><code>exemplo:
+true || false = true</code></pre>
+            </article>
+
+        </section>
+
+        <h2>Ternário</h2>
+        <section>
+            <!--Operador Ternário-->
+            <article class="card-operator">
+                <header>
+                    <div class="icone">
+                        ?:
+                    </div>
+                    <div class="operator-name">
+                        Ternário
+                    </div>
+                </header>
+                <p>Forma reduzida de um if/else: condição seguida de valor caso verdadeiro e valor caso falso.</p>
+                <pre><code>exemplo:
+idade >= 18 ? "maior" : "menor"</code></pre>
+            </article>
+
         </section>
 
     </main>
